@@ -99,6 +99,8 @@
 
 .nav-links {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
 }
 
@@ -113,6 +115,27 @@
   color: #aebfd3;
 }
 
+.nav-btn {
+  background-color: #4a90e2; /* same as Learn More button */
+  color: fff;
+  font-size: 1.2rem;
+  font-family: "Aleo", sans-serif;
+  font-weight: 600;
+  padding: 8px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none; /* remove underline for anchor */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn:hover {
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+}
+
 /* FEATURES SECTION */
 
 .features {
@@ -125,29 +148,29 @@
       rgba(34, 34, 34, 0.6),
       rgba(34, 34, 34, 0.6)
     ),
-    url("./img/elderly-couple.jpg");
+    url("./img/elderly-couple1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .features-header {
-  font-size: 3rem;
+  font-size: 3.4rem;
   font-weight: 500;
-  margin: 0 0 30px;
+  margin: 0 0 24px;
 }
 
 .features p {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 500;
   max-width: 700px;
   margin: 0 auto;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .features span {
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .feature-cards {
@@ -159,13 +182,13 @@
 }
 
 .feature-card {
-  background: rgba(94, 175, 249, 0.4);
-  backdrop-filter: blur(10px);
+  background: rgb(74, 145, 226, 0.65);
+  backdrop-filter: blur(24px);
   color: white;
   border-radius: 12px;
+  width: 20%;
   padding: 30px 20px;
-  width: 250px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -183,8 +206,97 @@
 }
 
 .feature-card p {
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 1.2rem;
+  font-weight: 400;
   color: #fff;
   margin: 0;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #f0f0f0;
+  margin-bottom: 0.8rem;
+}
+
+/* HOW IT WORKS */
+
+.how-it-works {
+  width: 100%;
+}
+
+.how-step {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.how-step-illustration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-70%, -50%);
+  width: 60rem;
+  height: auto;
+  z-index: 5;
+}
+
+.illustration-step1 {
+  position: absolute;
+  width: 64rem;
+  transform: translate(40px, 100px);
+}
+
+.illustration-step2 {
+  position: relative;
+  width: 64rem;
+  transform: translate(320px, -14px);
+}
+
+.illustration-step3 {
+  position: relative;
+  width: 64rem;
+  transform: translate(440px, 24px);
+}
+
+/* ARROWS */
+
+.arrow-step1 {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  width: 30rem;
+}
+
+.arrow-step2 {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  width: 30rem;
+  transform: scaleX(-1) rotate(20deg);
+  z-index: 5;
+}
+
+.notification-circle {
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  background-color: #5eaff9;
+  top: 42%;
+  left: 16%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.notification-popup {
+  position: absolute;
+  top: 20%;
+  left: 6%;
+  width: 20rem;
+  transform: rotate(-12deg);
+  z-index: 10;
 }
